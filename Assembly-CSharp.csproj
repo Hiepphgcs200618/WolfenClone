@@ -38,6 +38,8 @@
   <ItemGroup>
      <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualButton.cs" />
      <Compile Include="Assets\StarterAssets\InputSystem\StarterAssetsInputs.cs" />
+     <Compile Include="Assets\Scripts\FirePistol.cs" />
+     <Compile Include="Assets\Scripts\PickupAmmo.cs" />
      <Compile Include="Assets\StarterAssets\FirstPersonController\Scripts\FirstPersonController.cs" />
      <Compile Include="Assets\StarterAssets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
      <Compile Include="Assets\StarterAssets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
@@ -45,10 +47,9 @@
      <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualTouchZone.cs" />
      <Compile Include="Assets\StarterAssets\FirstPersonController\Scripts\BasicRigidBodyPush.cs" />
      <Compile Include="Assets\StarterAssets\TutorialInfo\Scripts\Readme.cs" />
-     <Compile Include="Assets\Scripts\FirePistol.cs" />
-     <Compile Include="Assets\Scripts\PickupPistol.cs" />
-     <Compile Include="Assets\Scripts\PickupAmmo.cs" />
      <Compile Include="Assets\Scripts\GlobalAmmo.cs" />
+     <Compile Include="Assets\Scripts\PickupPistol.cs" />
+     <Compile Include="Assets\Scripts\WeaponHolder.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -746,9 +747,9 @@
       <Project>{5454cd2a-c65d-ebc6-169c-c815b708b2b4}</Project>
       <Name>Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.Flow.csproj">
-      <Project>{622f1e0c-7f47-dddb-34db-5c06dea3803d}</Project>
-      <Name>Unity.VisualScripting.Flow</Name>
+    <ProjectReference Include="Unity.Postprocessing.Editor.csproj">
+      <Project>{cc85b7c6-fd1b-2acb-6581-32290a77a172}</Project>
+      <Name>Unity.Postprocessing.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{ce412309-be09-973b-4a86-1d33c8a53078}</Project>
@@ -765,6 +766,10 @@
     <ProjectReference Include="Unity.PlasticSCM.Editor.csproj">
       <Project>{a559dd75-77d9-a15a-9121-9053fd67fe38}</Project>
       <Name>Unity.PlasticSCM.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.Flow.csproj">
+      <Project>{622f1e0c-7f47-dddb-34db-5c06dea3803d}</Project>
+      <Name>Unity.VisualScripting.Flow</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
       <Project>{125f1530-f192-d221-4e88-14adb036b4e9}</Project>
@@ -790,6 +795,10 @@
       <Project>{15484368-e2d1-60c7-62bb-ddfc897725a7}</Project>
       <Name>Unity.Services.Core.Analytics</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.Postprocessing.Runtime.csproj">
+      <Project>{a2291da8-fce8-bbf0-0e19-91a8a941e8b4}</Project>
+      <Name>Unity.Postprocessing.Runtime</Name>
+    </ProjectReference>
     <ProjectReference Include="com.unity.cinemachine.editor.csproj">
       <Project>{ee467c6c-8493-af2d-1d64-a806191a3369}</Project>
       <Name>com.unity.cinemachine.editor</Name>
@@ -813,14 +822,6 @@
     <ProjectReference Include="Unity.VisualScripting.State.csproj">
       <Project>{3e5028a9-c9d4-c732-6b9e-0042c43b3701}</Project>
       <Name>Unity.VisualScripting.State</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Postprocessing.Editor.csproj">
-      <Project>{cc85b7c6-fd1b-2acb-6581-32290a77a172}</Project>
-      <Name>Unity.Postprocessing.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.Postprocessing.Runtime.csproj">
-      <Project>{a2291da8-fce8-bbf0-0e19-91a8a941e8b4}</Project>
-      <Name>Unity.Postprocessing.Runtime</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -366,6 +366,7 @@
 "Assets/Scripts/GlobalAmmo.cs"
 "Assets/Scripts/PickupAmmo.cs"
 "Assets/Scripts/PickupPistol.cs"
+"Assets/Scripts/WeaponHolder.cs"
 "Assets/StarterAssets/FirstPersonController/Scripts/BasicRigidBodyPush.cs"
 "Assets/StarterAssets/FirstPersonController/Scripts/FirstPersonController.cs"
 "Assets/StarterAssets/InputSystem/StarterAssetsInputs.cs"
