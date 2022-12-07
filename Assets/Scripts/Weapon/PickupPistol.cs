@@ -10,7 +10,7 @@ public class PickupPistol : MonoBehaviour
     public AudioSource gun_Pickup_Sound;
     void OnTriggerEnter(Collider other)
     {
-        pistol.SetActive(true);
+        //pistol.SetActive(true);
         pistol_Pickup.SetActive(false);
         gun_Pickup_Sound.Play();
         isAvailable = true;

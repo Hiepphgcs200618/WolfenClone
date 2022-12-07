@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class PickupShotgun : MonoBehaviour
 {
-    public static bool isAvailable = true;
+    public static bool isAvailable = false;
     public GameObject Shotgun;
     public GameObject Shotgun_Pickup;
     public AudioSource gun_Pickup_Sound;
     void OnTriggerEnter(Collider other)
     {
-        Shotgun.SetActive(true);
+        //Shotgun.SetActive(true);
         Shotgun_Pickup.SetActive(false);
         gun_Pickup_Sound.Play();
         isAvailable = true;

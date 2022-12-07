@@ -13,6 +13,7 @@ public class EnemyAI : MonoBehaviour
     public bool isFiring = false;
     public float fireRate = 1f;
     public GameObject hurtScreen;
+    public int bulletDamage = 5;
     void Update()
     {
         hitTag = LookAtTag.hitTag;
@@ -26,6 +27,7 @@ public class EnemyAI : MonoBehaviour
             theSoldier.GetComponent<Animator>().Play("Idle");
             lookingAtPlayer = false;
         }
+        
         IEnumerator EnemyFire()
         {
             isFiring = true;
@@ -38,7 +40,7 @@ public class EnemyAI : MonoBehaviour
             hurtScreen.SetActive(true);
             yield return new WaitForSeconds(0.05f);
             hurtScreen.SetActive(false);
-            GlobalHP.valueHP -= 5;
+            GlobalHP.valueHP -= bulletDamage;
             yield return new WaitForSeconds(fireRate-0.2f);
             isFiring = false;
         }

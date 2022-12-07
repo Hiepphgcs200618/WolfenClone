@@ -7,6 +7,9 @@ public class WeaponHolder : MonoBehaviour
     public GameObject pistol;
     public GameObject shotgun;
     public GameObject rifle;
+    public GameObject icon_Pistol;
+    public GameObject icon_Rifle;
+    public GameObject icon_Shotgun;
     public static int currentGun;
     void Update() {
         if (Input.GetKey(KeyCode.Alpha1) && PickupPistol.isAvailable == true)
@@ -29,6 +32,18 @@ public class WeaponHolder : MonoBehaviour
             rifle.SetActive(false);
             shotgun.SetActive(true);
             currentGun = 2;
+        }
+        if(PickupPistol.isAvailable == true)
+        {
+            icon_Pistol.SetActive(true);
+        }
+        if(PickupRifle.isAvailable == true)
+        {
+            icon_Rifle.SetActive(true);
+        }
+        if(PickupShotgun.isAvailable == true)
+        {
+            icon_Shotgun.SetActive(true);
         }
     }
 }

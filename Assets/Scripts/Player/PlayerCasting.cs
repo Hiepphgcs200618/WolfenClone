@@ -6,12 +6,12 @@ public class PlayerCasting : MonoBehaviour
 {
     public static float distantFromTarget;
     public float toTarget;
+    public static RaycastHit hit;
     void Update()
     {
-        RaycastHit Hit;
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward),out Hit))
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward),out hit))
         {
-            toTarget = Hit.distance;
+            toTarget = hit.distance;
             distantFromTarget = toTarget;
         }
     }

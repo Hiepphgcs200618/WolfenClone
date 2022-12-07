@@ -36,6 +36,9 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Stats\Firstaid.cs" />
+     <Compile Include="Assets\Scripts\Enemies\Look\LookAtTag.cs" />
+     <Compile Include="Assets\Scripts\Stats\GlobalHP.cs" />
      <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualButton.cs" />
      <Compile Include="Assets\StarterAssets\InputSystem\StarterAssetsInputs.cs" />
      <Compile Include="Assets\Scripts\Weapon\FireGun.cs" />
@@ -43,20 +46,30 @@
      <Compile Include="Assets\StarterAssets\FirstPersonController\Scripts\FirstPersonController.cs" />
      <Compile Include="Assets\StarterAssets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
      <Compile Include="Assets\StarterAssets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
+     <Compile Include="Assets\Scripts\Scenes\LevelRecycle.cs" />
+     <Compile Include="Assets\Scripts\Door\Door.cs" />
      <Compile Include="Assets\Scripts\Weapon\PickupShotgun.cs" />
+     <Compile Include="Assets\Scripts\Scenes\Fadein.cs" />
+     <Compile Include="Assets\Scripts\Scenes\GlobalSceneIndex.cs" />
      <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualJoystick.cs" />
      <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualTouchZone.cs" />
+     <Compile Include="Assets\Scripts\Enemies\EnemyDeath.cs" />
      <Compile Include="Assets\StarterAssets\FirstPersonController\Scripts\BasicRigidBodyPush.cs" />
      <Compile Include="Assets\StarterAssets\TutorialInfo\Scripts\Readme.cs" />
      <Compile Include="Assets\Scripts\Weapon\PickupRifle.cs" />
      <Compile Include="Assets\Scripts\Stats\GlobalAmmo.cs" />
      <Compile Include="Assets\Scripts\Weapon\WeaponHolder.cs" />
+     <Compile Include="Assets\Scripts\Enemies\Look\LookAtPlayer.cs" />
+     <Compile Include="Assets\Scripts\Scenes\GameOVer.cs" />
+     <Compile Include="Assets\Scripts\Scenes\LevelRedirect.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerCasting.cs" />
      <Compile Include="Assets\Scripts\Weapon\PickupPistol.cs" />
-     <Compile Include="Assets\Scripts\Enemies\Look\LookAtPlayer.cs" />
      <Compile Include="Assets\Scripts\Enemies\EnemyAI.cs" />
-     <Compile Include="Assets\Scripts\Enemies\Look\LookAtTag.cs" />
-     <Compile Include="Assets\Scripts\Stats\GlobalHP.cs" />
+     <Compile Include="Assets\Scripts\Button\Button_GameOver.cs" />
+     <Compile Include="Assets\Scripts\Button\Button_Menu.cs" />
+     <Compile Include="Assets\Scripts\Scenes\PauseGame.cs" />
+     <Compile Include="Assets\Scripts\Button\Button_PauseScreen.cs" />
+     <Compile Include="Assets\Scripts\Scenes\NextLevel.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
@@ -68,6 +81,7 @@
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\ToonSoldiers_WW2_demo\ToonSoldiers_WW2_demo_README.txt" />
      <None Include="Assets\StarterAssets\license.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />

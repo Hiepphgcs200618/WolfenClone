@@ -13,6 +13,8 @@ public class FireGun : MonoBehaviour
     public int maxAmmo, currentAmmo;
     public float fireTimer,reloadTimer;
     public bool isFiring;
+    public float targetDistance;
+    int[] damageAmount = {5,5,20};
     void Update()
     {
         currentAmmo = GlobalAmmo.loaded_Ammo[WeaponHolder.currentGun];
@@ -64,9 +66,11 @@ public class FireGun : MonoBehaviour
         nuzzleFlash.SetActive(true);
         gunFire.Play();
         GlobalAmmo.loaded_Ammo[WeaponHolder.currentGun] -=1;
+        targetDistance = PlayerCasting.hit.distance;
+        PlayerCasting.hit.transform.SendMessage("DamageEnemy", damageAmount[WeaponHolder.currentGun] , SendMessageOptions.DontRequireReceiver);
+
         yield return new WaitForSeconds(0.05f);
         nuzzleFlash.SetActive(false);
-        //yield return new WaitForSeconds(0.05f);
         gun.GetComponent<Animator>().Play("Idle");
         yield return new WaitForSeconds(fireTimer);
         isFiring = false;

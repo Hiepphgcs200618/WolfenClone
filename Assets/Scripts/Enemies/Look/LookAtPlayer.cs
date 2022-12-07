@@ -7,6 +7,6 @@ public class LookAtPlayer : MonoBehaviour
     public Transform thePlayer;
     void Update()
     {
-        transform.LookAt(thePlayer);
+        this.transform.LookAt(thePlayer);
     }
 }
